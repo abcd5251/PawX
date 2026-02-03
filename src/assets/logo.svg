@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Circle with Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="pawGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0e7ff;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Main Circle Background -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient)"/>
+
+  <!-- Paw Print Design -->
+  <!-- Main Pad -->
+  <ellipse cx="100" cy="120" rx="35" ry="40" fill="url(#pawGradient)"/>
+
+  <!-- Toe Pads -->
+  <ellipse cx="70" cy="80" rx="18" ry="22" fill="url(#pawGradient)"/>
+  <ellipse cx="100" cy="70" rx="18" ry="22" fill="url(#pawGradient)"/>
+  <ellipse cx="130" cy="80" rx="18" ry="22" fill="url(#pawGradient)"/>
+
+  <!-- AI Circuit Lines -->
+  <path d="M 60 140 L 60 160 L 80 160" stroke="#a5b4fc" stroke-width="2" fill="none" opacity="0.6"/>
+  <path d="M 140 140 L 140 160 L 120 160" stroke="#a5b4fc" stroke-width="2" fill="none" opacity="0.6"/>
+  <circle cx="60" cy="140" r="3" fill="#a5b4fc" opacity="0.8"/>
+  <circle cx="140" cy="140" r="3" fill="#a5b4fc" opacity="0.8"/>
+  <circle cx="80" cy="160" r="3" fill="#a5b4fc" opacity="0.8"/>
+  <circle cx="120" cy="160" r="3" fill="#a5b4fc" opacity="0.8"/>
+</svg>

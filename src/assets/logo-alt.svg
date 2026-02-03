@@ -1,0 +1,30 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="modernGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4f46e5;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#7c3aed;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2563eb;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Rounded Square Background -->
+  <rect x="10" y="10" width="180" height="180" rx="40" fill="url(#modernGradient)"/>
+
+  <!-- Abstract AI Brain/Network -->
+  <circle cx="100" cy="80" r="25" fill="white" opacity="0.9"/>
+  <circle cx="70" cy="120" r="20" fill="white" opacity="0.8"/>
+  <circle cx="130" cy="120" r="20" fill="white" opacity="0.8"/>
+  <circle cx="100" cy="150" r="18" fill="white" opacity="0.7"/>
+
+  <!-- Connection Lines -->
+  <line x1="100" y1="105" x2="85" y2="105" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="100" y1="105" x2="115" y2="105" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="85" y1="130" x2="100" y2="135" stroke="white" stroke-width="3" opacity="0.6"/>
+  <line x1="115" y1="130" x2="100" y2="135" stroke="white" stroke-width="3" opacity="0.6"/>
+
+  <!-- Small Accent Dots -->
+  <circle cx="60" cy="60" r="4" fill="white" opacity="0.5"/>
+  <circle cx="140" cy="60" r="4" fill="white" opacity="0.5"/>
+  <circle cx="50" cy="140" r="4" fill="white" opacity="0.5"/>
+  <circle cx="150" cy="140" r="4" fill="white" opacity="0.5"/>
+</svg>

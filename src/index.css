@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* PawX AI Design System - 科技感 + 卡通风格 */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap');
+
+@layer base {
+  :root {
+    /* 品牌色 - 活力橙 */
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* 深橙强调 */
+    --accent: 21 90% 48%;
+    --accent-foreground: 0 0% 100%;
+    
+    /* 温暖米色背景 */
+    --background: 33 100% 96%;
+    --foreground: 20 14% 4%;
+
+    /* 卡片 - 白色带橙色边框 */
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 4%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 4%;
+
+    /* 次要色 */
+    --secondary: 33 100% 92%;
+    --secondary-foreground: 24 95% 25%;
+
+    /* 静音色 */
+    --muted: 33 60% 90%;
+    --muted-foreground: 20 10% 40%;
+
+    /* 危险色 */
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 33 40% 85%;
+    --input: 33 40% 85%;
+    --ring: 24 95% 53%;
+
+    --radius: 1rem;
+
+    /* 自定义品牌变量 */
+    --paw-orange: 24 95% 53%;
+    --paw-deep-orange: 21 90% 48%;
+    --paw-cream: 33 100% 96%;
+    --paw-dark: 20 14% 4%;
+    --paw-brown: 28 80% 20%;
+    
+    /* 渐变 */
+    --gradient-hero: linear-gradient(135deg, hsl(33 100% 96%) 0%, hsl(33 80% 92%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0 0% 100%) 0%, hsl(33 60% 97%) 100%);
+    --gradient-orange: linear-gradient(135deg, hsl(24 95% 53%) 0%, hsl(21 90% 48%) 100%);
+    
+    /* 阴影 */
+    --shadow-soft: 0 4px 20px -4px hsl(24 95% 53% / 0.15);
+    --shadow-card: 0 8px 30px -8px hsl(24 95% 53% / 0.2);
+    --shadow-button: 0 6px 20px -4px hsl(24 95% 53% / 0.4);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 240 5.9% 10%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 240 5.9% 10%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    /* 深色模式 - 深棕科技感 */
+    --background: 20 14% 6%;
+    --foreground: 33 100% 96%;
+
+    --card: 20 14% 10%;
+    --card-foreground: 33 100% 96%;
+
+    --popover: 20 14% 8%;
+    --popover-foreground: 33 100% 96%;
+
+    --primary: 24 95% 53%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 20 14% 15%;
+    --secondary-foreground: 33 100% 96%;
+
+    --muted: 20 14% 18%;
+    --muted-foreground: 33 40% 60%;
+
+    --accent: 21 90% 48%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 20 14% 20%;
+    --input: 20 14% 20%;
+    --ring: 24 95% 53%;
+
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  /* 超大圆润标题样式 - MetaMask 风格 */
+  .hero-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 900;
+    letter-spacing: -0.02em;
+    line-height: 0.95;
+  }
+  
+  /* 代码块样式 */
+  .code-block {
+    @apply bg-card/80 backdrop-blur-sm rounded-xl border border-border/50 p-4 font-mono text-sm;
+    box-shadow: var(--shadow-soft);
+  }
+  
+  /* 玻璃态卡片 */
+  .glass-card {
+    @apply bg-card/70 backdrop-blur-md rounded-2xl border border-border/30;
+    box-shadow: var(--shadow-card);
+  }
+  
+  /* 渐变文字 */
+  .gradient-text {
+    @apply bg-clip-text text-transparent;
+    background-image: var(--gradient-orange);
+  }
+  
+  /* 浮动动画 */
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+  
+  /* 脉冲光晕 */
+  @keyframes pulse-glow {
+    0%, 100% {
+      box-shadow: 0 0 20px hsl(24 95% 53% / 0.3);
+    }
+    50% {
+      box-shadow: 0 0 40px hsl(24 95% 53% / 0.5);
+    }
+  }
+  
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  /* 滚动标签动画 */
+  @keyframes scroll-left {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
+  
+  .animate-scroll-left {
+    animation: scroll-left 20s linear infinite;
+  }
+}
