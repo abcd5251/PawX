@@ -73,8 +73,10 @@ const HeroSection = () => {
             Get Started
             <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="outline" size="lg">
-            View Docs
+          <Button variant="outline" size="lg" asChild>
+            <a href="https://github.com/abcd5251/pawx_api" target="_blank" rel="noreferrer">
+              View Docs
+            </a>
           </Button>
         </div>
       </div>

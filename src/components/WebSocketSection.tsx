@@ -127,8 +127,10 @@ const WebSocketSection = () => {
 
         {/* Centered Button */}
         <div className="flex justify-center mt-12">
-          <Button variant="hero" size="lg">
-            View WebSocket Docs
+          <Button variant="hero" size="lg" asChild>
+            <a href="https://github.com/abcd5251/pawx_api/blob/main/WEBSOCKET.md" target="_blank" rel="noreferrer">
+              View WebSocket Docs
+            </a>
           </Button>
         </div>
       </div>

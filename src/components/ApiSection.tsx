@@ -57,8 +57,10 @@ const ApiSection = () => {
               ))}
             </div>
 
-            <Button variant="hero" size="lg">
-              Read API Docs
+            <Button variant="hero" size="lg" asChild>
+              <a href="https://github.com/abcd5251/pawx_api" target="_blank" rel="noreferrer">
+                Read API Docs
+              </a>
             </Button>
           </div>
 

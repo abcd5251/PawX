@@ -91,13 +91,13 @@ const AnimatedPaw = ({ label, className = "", flip = false, rotate = 0 }: Animat
         <div
           className={`mt-2 text-center text-base md:text-xl font-bold transition-all duration-300 ${
             isActive || isHovered
-              ? "text-[#E8A87C]"
-              : "text-primary/70"
+              ? "text-primary"
+              : "text-foreground"
           }`}
           style={{
             textShadow:
               isActive || isHovered
-                ? "0 0 6px rgba(232, 168, 124, 0.5), 0 0 12px rgba(232, 168, 124, 0.3)"
+                ? "0 0 6px rgba(251, 146, 60, 0.5), 0 0 12px rgba(251, 146, 60, 0.3)"
                 : "none",
           }}
         >

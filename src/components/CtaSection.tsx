@@ -35,9 +35,11 @@ const CtaSection = () => {
             Get Started Now
             <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </Button>
-          <Button variant="outline" size="xl" className="group">
-            <Twitter className="mr-2 w-5 h-5" />
-            Follow @PawXAI
+          <Button variant="outline" size="xl" className="group" asChild>
+            <a href="https://x.com/pawx_ai" target="_blank" rel="noreferrer">
+              <Twitter className="mr-2 w-5 h-5" />
+              Follow @PawXAI
+            </a>
           </Button>
         </div>
       </div>
