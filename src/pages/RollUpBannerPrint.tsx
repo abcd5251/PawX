@@ -96,7 +96,7 @@ const RollUpBannerPrint = () => {
                 </h3>
                 <div className="text-xs text-muted-foreground text-left">
                   <ul className="list-disc list-inside space-y-1">
-                    <li>Instant alerts (~500ms)</li>
+                    <li>Instant alerts (~300ms)</li>
                     <li>Quick trend summaries</li>
                     <li>KOL identification</li>
                     <li>Sentiment monitoring</li>
