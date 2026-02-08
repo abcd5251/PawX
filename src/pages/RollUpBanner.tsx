@@ -35,6 +35,29 @@ const RollUpBanner = () => {
             </h2>
           </div>
 
+          {/* PawX 介绍 */}
+          <div className="w-full text-center mb-10 px-8">
+            <h2 className="hero-title text-4xl mb-6">
+              <span className="gradient-text">INTRODUCTION</span>
+            </h2>
+            <p className="text-2xl text-foreground font-semibold leading-relaxed">
+              We provide Web3 Twitter data APIs, real-time Telegram alert bots, profile intelligence, and customized AI solutions—powering news trading bots, InfoFi agents, KOL analytics, and automated workflows.
+            </p>
+          </div>
+
+          {/* 核心特性标签 */}
+          <div className="flex flex-wrap justify-center gap-3 mb-10">
+            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
+              🐾 Real-Time
+            </span>
+            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
+              ⚡ Fast
+            </span>
+            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
+              🤖 Smart
+            </span>
+          </div>
+
           <p className="text-xl text-muted-foreground font-semibold text-center mb-3">
             Stop missing alpha. Start tracking signals.
           </p>
@@ -75,29 +98,6 @@ const RollUpBanner = () => {
             </div>
           </div>
 
-          {/* PawX 介绍 */}
-          <div className="w-full text-center mb-10 px-8">
-            <h2 className="hero-title text-4xl mb-6">
-              <span className="gradient-text">INTRODUCTION</span>
-            </h2>
-            <p className="text-2xl text-foreground font-semibold leading-relaxed">
-              We provide Web3 Twitter data APIs, real-time Telegram alert bots, profile intelligence, and customized AI solutions—powering news trading bots, InfoFi agents, KOL analytics, and automated workflows.
-            </p>
-          </div>
-
-          {/* 核心特性标签 */}
-          <div className="flex flex-wrap justify-center gap-3 mb-10">
-            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
-              🐾 Real-Time
-            </span>
-            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
-              ⚡ Fast
-            </span>
-            <span className="px-5 py-2 bg-primary/10 rounded-full text-lg font-bold text-primary">
-              🤖 Smart
-            </span>
-          </div>
-
           {/* 核心功能展示 */}
           <div className="w-full mb-6">
             <h2 className="hero-title text-4xl text-center mb-4">
@@ -111,13 +111,15 @@ const RollUpBanner = () => {
 
             <div className="grid grid-cols-2 gap-4">
               <div className="glass-card p-4 hover:shadow-card transition-all">
-                <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center mb-2">
-                  <Zap className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center">
+                    <Zap className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    Data API
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">
-                  Data API
-                </h3>
-                <div className="text-xs text-muted-foreground text-left">
+                <div className="text-l text-muted-foreground text-left">
                   <ul className="list-disc list-inside space-y-1">
                     <li>Tweet engagement tracking</li>
                     <li>10K KOL Label Data</li>
@@ -128,13 +130,15 @@ const RollUpBanner = () => {
               </div>
 
               <div className="glass-card p-4 hover:shadow-card transition-all">
-                <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center mb-2">
-                  <MessageSquare className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center">
+                    <MessageSquare className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    Telegram Bot
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">
-                  Telegram Bot
-                </h3>
-                <div className="text-xs text-muted-foreground text-left">
+                <div className="text-l text-muted-foreground text-left">
                   <ul className="list-disc list-inside space-y-1">
                     <li>Instant alerts (~300ms)</li>
                     <li>Quick trend summaries</li>
@@ -145,13 +149,15 @@ const RollUpBanner = () => {
               </div>
 
               <div className="glass-card p-4 hover:shadow-card transition-all">
-                <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center mb-2">
-                  <Radio className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center">
+                    <Radio className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    Customized AI
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">
-                  Customized AI
-                </h3>
-                <div className="text-xs text-muted-foreground text-left">
+                <div className="text-l text-muted-foreground text-left">
                   <ul className="list-disc list-inside space-y-1">
                     <li>InfoFi project tracking</li>
                     <li>Auto summary bot</li>
@@ -162,13 +168,15 @@ const RollUpBanner = () => {
               </div>
 
               <div className="glass-card p-4 hover:shadow-card transition-all">
-                <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center mb-2">
-                  <BarChart3 className="w-6 h-6 text-white" />
+                <div className="flex items-center gap-3 mb-3">
+                  <div className="w-12 h-12 rounded-xl bg-gradient-orange flex items-center justify-center">
+                    <BarChart3 className="w-6 h-6 text-white" />
+                  </div>
+                  <h3 className="text-xl font-bold text-foreground">
+                    Social Intelligence Platform
+                  </h3>
                 </div>
-                <h3 className="text-lg font-bold text-foreground mb-1">
-                  Social Intelligence Platform
-                </h3>
-                <div className="text-xs text-muted-foreground text-left">
+                <div className="text-l text-muted-foreground text-left">
                   <ul className="list-disc list-inside space-y-1">
                     <li>Identify key opinion leaders</li>
                     <li>Monitor competitive intelligence</li>
