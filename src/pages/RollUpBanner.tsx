@@ -20,18 +20,6 @@ const RollUpBanner = () => {
 
         {/* 内容区域 */}
         <div className="relative h-full flex flex-col py-8 px-10">
-          <div className="absolute top-6 right-6 flex items-center gap-4 rounded-2xl bg-background/80 px-5 py-4 shadow-lg backdrop-blur">
-            <div className="text-right">
-              <div className="text-3xl font-extrabold text-foreground">Follow X</div>
-              <div className="text-2xl font-bold text-foreground">@pawx_ai</div>
-            </div>
-            <img
-              src="/x.png"
-              alt="X Logo"
-              className="h-24 w-24 object-contain"
-            />
-          </div>
-
           {/* 顶部 Logo + 主标题区域 */}
           <div className="text-center mb-10">
             <div className="mb-6 flex justify-center">
@@ -45,6 +33,46 @@ const RollUpBanner = () => {
               <span className="gradient-text">Paw through</span> social data<br />
               <span className="gradient-text">to</span> crypto insights
             </h2>
+          </div>
+
+          <p className="text-xl text-muted-foreground font-semibold text-center mb-3">
+            Stop missing alpha. Start tracking signals.
+          </p>
+
+          <div className="flex justify-center items-center gap-8 mb-8" style={{ background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 140, 66, 0.15) 100%)', padding: '18px', borderRadius: '16px', border: '2px solid rgba(255, 107, 53, 0.3)' }}>
+            <div className="flex items-center gap-4 rounded-2xl bg-background/80 px-5 py-3 shadow-lg">
+              <img
+                src="/X_logo.png"
+                alt="X Logo"
+                className="h-20 w-20 object-contain"
+              />
+              <div className="text-left">
+                <div className="text-xl font-extrabold text-foreground">Follow X</div>
+                <div className="text-lg font-bold text-foreground">@pawx_ai</div>
+              </div>
+              <img
+                src="/x-qr.png"
+                alt="X QR Code"
+                className="h-24 w-24 object-contain"
+              />
+            </div>
+
+            <div className="flex items-center gap-4 rounded-2xl bg-background/80 px-5 py-3 shadow-lg">
+              <img
+                src="/telegram_icon.png"
+                alt="Telegram Logo"
+                className="h-20 w-20 object-contain"
+              />
+              <div className="text-left">
+                <div className="text-xl font-extrabold text-foreground">Follow TG</div>
+                <div className="text-lg font-bold text-foreground">@pawx_ai</div>
+              </div>
+              <img
+                src="/telegram.png"
+                alt="Telegram QR Code"
+                className="h-24 w-24 object-contain"
+              />
+            </div>
           </div>
 
           {/* PawX 介绍 */}
@@ -172,36 +200,7 @@ const RollUpBanner = () => {
               </span>
             </div>
           </div>
-
-          <p className="text-xl text-muted-foreground font-semibold text-center mb-2 mt-8">
-            Stop missing alpha. Start tracking signals.
-          </p>
-
-          {/* 二维码区域 - 固定在最底部 */}
-          <div className="flex justify-center items-center gap-16" style={{ background: 'linear-gradient(135deg, rgba(255, 107, 53, 0.1) 0%, rgba(255, 140, 66, 0.15) 100%)', padding: '16px', borderRadius: '16px', border: '2px solid rgba(255, 107, 53, 0.3)' }}>
-            <div className="text-center">
-              <div className="w-28 h-28 bg-white p-2 rounded-lg shadow-md mb-2">
-                <img
-                  src="/x.png"
-                  alt="X QR Code"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <p className="text-sm font-bold text-gray-600">Follow on X</p>
-            </div>
-
-            <div className="text-center">
-              <div className="w-28 h-28 bg-white p-2 rounded-lg shadow-md mb-2">
-                <img
-                  src="/telegram.png"
-                  alt="Telegram QR Code"
-                  className="w-full h-full object-contain"
-                />
-              </div>
-              <p className="text-sm font-bold text-gray-600">Follow on Telegram</p>
-            </div>
-          </div>
-
+          
         </div>
       </div>
     </div>
