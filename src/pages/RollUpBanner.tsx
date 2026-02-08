@@ -119,8 +119,8 @@ const RollUpBanner = () => {
                     Data API
                   </h3>
                 </div>
-                <div className="text-l text-muted-foreground text-left">
-                  <ul className="list-disc list-inside space-y-1">
+                <div className="text-lg text-muted-foreground text-left leading-relaxed">
+                  <ul className="list-disc list-inside space-y-2">
                     <li>Tweet engagement tracking</li>
                     <li>10K KOL Label Data</li>
                     <li>Returns tweets referencing a tweet</li>
@@ -138,8 +138,8 @@ const RollUpBanner = () => {
                     Telegram Bot
                   </h3>
                 </div>
-                <div className="text-l text-muted-foreground text-left">
-                  <ul className="list-disc list-inside space-y-1">
+                <div className="text-lg text-muted-foreground text-left leading-relaxed">
+                  <ul className="list-disc list-inside space-y-2">
                     <li>Instant alerts (~300ms)</li>
                     <li>Quick trend summaries</li>
                     <li>KOL identification</li>
@@ -157,8 +157,8 @@ const RollUpBanner = () => {
                     Customized AI
                   </h3>
                 </div>
-                <div className="text-l text-muted-foreground text-left">
-                  <ul className="list-disc list-inside space-y-1">
+                <div className="text-lg text-muted-foreground text-left leading-relaxed">
+                  <ul className="list-disc list-inside space-y-2">
                     <li>InfoFi project tracking</li>
                     <li>Auto summary bot</li>
                     <li>KOL performance labels</li>
@@ -176,8 +176,8 @@ const RollUpBanner = () => {
                     Social Intelligence Platform
                   </h3>
                 </div>
-                <div className="text-l text-muted-foreground text-left">
-                  <ul className="list-disc list-inside space-y-1">
+                <div className="text-lg text-muted-foreground text-left leading-relaxed">
+                  <ul className="list-disc list-inside space-y-2">
                     <li>Identify key opinion leaders</li>
                     <li>Monitor competitive intelligence</li>
                     <li>Measure campaign effectiveness</li>
