@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Twitter } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.jpg";
+import telegramIcon from "@/assets/telegram.png";
+import twitterIcon from "@/assets/twitter.png";
 
 const CtaSection = () => {
   return (
@@ -32,14 +34,15 @@ const CtaSection = () => {
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
           <Button variant="outline" size="xl" className="group" asChild>
-            <a href="https://t.me/pawx_ai" target="_blank" rel="noreferrer">
+            <a href="https://t.me/pawx_ai" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+              <img src={telegramIcon} alt="Telegram" className="w-5 h-5 rounded-full" />
               Contact Us @pawx_ai
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
           <Button variant="outline" size="xl" className="group" asChild>
-            <a href="https://x.com/pawx_ai" target="_blank" rel="noreferrer">
-              <Twitter className="mr-2 w-5 h-5" />
+            <a href="https://x.com/pawx_ai" target="_blank" rel="noreferrer" className="flex items-center gap-2">
+              <img src={twitterIcon} alt="X" className="w-5 h-5" />
               Follow Twitter @pawx_ai
             </a>
           </Button>

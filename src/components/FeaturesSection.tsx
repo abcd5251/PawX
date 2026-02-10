@@ -3,38 +3,38 @@ import { BarChart3, Filter, Users, Zap, Hash, Radio } from "lucide-react";
 const dashboardFeatures = [
   {
     icon: BarChart3,
-    title: "Tweets metrics",
-    description: "Track engagement and performance in real-time",
+    title: "Tweet Performance",
+    description: "Real-time engagement metrics that show which posts actually move markets.",
     number: "01"
   },
   {
     icon: Filter,
-    title: "Tweets filters",
-    description: "Customize your feed with advanced filtering",
+    title: "Advanced Tweet Filters",
+    description: "Filter by token, contract, hashtag, sentiment, or engagement to surface signal fast.",
     number: "02"
   },
   {
     icon: Users,
-    title: "KOL dataset (~10K)",
-    description: "Access curated influencer data instantly",
+    title: "Curated KOL Dataset (~10K)",
+    description: "KOL profiles with tags and audience quality insights.",
     number: "03"
   },
   {
     icon: Zap,
-    title: "Low-latency stream / webhooks",
-    description: "Get updates with minimal delay",
+    title: "Smart Filters",
+    description: "Instant keyword and trending filters that meet your need.",
     number: "04"
   },
   {
     icon: Hash,
-    title: "Keywords engagement records",
-    description: "Monitor trending topics and hashtags",
+    title: "Keyword & Hashtag Insights",
+    description: "Track rising narratives, keywords, and hashtag momentum early.",
     number: "05"
   },
   {
     icon: Radio,
-    title: "X's Real-time Tweet data",
-    description: "Stream live tweets as they happen",
+    title: "Live Feed + AI Sniping Signals",
+    description: "AI-powered live feed highlighting posts with trading or viral potential.",
     number: "06"
   },
 ];
