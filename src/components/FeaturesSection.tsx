@@ -46,11 +46,10 @@ const FeaturesSection = () => {
         {/* Section Header */}
         <div className="text-center mb-12">
           <h2 className="hero-title text-4xl md:text-5xl lg:text-6xl text-foreground mb-4">
-            <span className="text-foreground">PAWX OFFERS</span>
-            <br />
-            <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">THE BEST</span>
-            <br />
-            <span className="text-foreground">DASHBOARD</span>
+            <span className="text-foreground">SOCIAL  </span>
+            
+            <span className="bg-gradient-to-r from-orange-500 via-orange-400 to-amber-400 bg-clip-text text-transparent">  INTELLIGENCE  </span>
+            <span className="text-foreground">  PLATFORM </span>
           </h2>
         </div>
 

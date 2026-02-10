@@ -2,7 +2,7 @@ import { Copy, Check } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 
-const codeExample = `curl -X POST "https://foxhole.bot/api/v1/keywordMonitors" \\
+const codeExample = `curl -X POST "https://pawx.ai/api/v1/keywordMonitors" \\
   -H "Content-Type: application/json" \\
   -H "X-API-Key: YOUR-API-KEY" \\
   -d '{"name":"uxlink tweets","keywords":["@uxlink"]}'`;
@@ -97,7 +97,7 @@ const ApiSection = () => {
                 <code className="text-sm font-mono">
                   <span className="text-primary">curl</span>
                   <span className="text-muted-foreground"> -X POST </span>
-                  <span className="text-green-600">"https://foxhole.bot/api/v1/keywordMonitors"</span>
+                  <span className="text-green-600">"https://pawx.ai/api/v1/keywordMonitors"</span>
                   <span className="text-muted-foreground"> \</span>
                   <br />
                   <span className="text-muted-foreground">  -H </span>
@@ -110,7 +110,7 @@ const ApiSection = () => {
                   <span className="text-muted-foreground">  -d </span>
                   <span className="text-yellow-600">{'{"name":"uxlink tweets","keywords":'}</span>
                   <br />
-                  <span className="text-muted-foreground">  Low-latency stream / webhooks (~500ms)</span>
+                  <span className="text-muted-foreground">  Low-latency stream / webhooks (~300ms)</span>
                   <br />
                   <span className="text-yellow-600">{'["@uxlink"]}\''}</span>
                 </code>

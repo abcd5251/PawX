@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import AnimatedPaw from "@/components/AnimatedPaw";
 const HeroSection = () => {
-  return <section className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
+  return <section id="top" className="relative min-h-screen flex items-center justify-center pt-24 pb-16 px-6 overflow-hidden">
       {/* 简洁背景装饰 */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {/* 柔和渐变光晕 */}
@@ -68,10 +68,12 @@ const HeroSection = () => {
 
         {/* 简洁按钮组 */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button variant="hero" size="lg" className="group">
-            <Sparkles className="w-4 h-4 mr-2" />
-            Get Started
-            <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+          <Button variant="hero" size="lg" className="group" asChild>
+            <a href="https://foxhole.bot/" target="_blank" rel="noreferrer">
+              <Sparkles className="w-4 h-4 mr-2" />
+              Get Started
+              <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            </a>
           </Button>
           <Button variant="outline" size="lg" asChild>
             <a href="https://github.com/abcd5251/pawx_api" target="_blank" rel="noreferrer">

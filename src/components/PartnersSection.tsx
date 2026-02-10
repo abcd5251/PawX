@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react";
 import logo1 from "@/assets/logo1.jpg";
 import logo2 from "@/assets/logo2.jpg";
-import logo3 from "@/assets/logo3.jpg";
+import logo3 from "@/assets/padtai.svg";
 
 const testimonials = [
   {
@@ -17,7 +17,7 @@ const testimonials = [
     highlight: "Research powerhouse",
   },
   {
-    company: "Pyth",
+    company: "Padtai",
     logo: logo3,
     quote: "Latency on PawX's feed is low enough for us to use it in production systems. PawX is the most dependable Twitter data provider we've worked with so far. PawX is a no-brainer.",
     highlight: "Ultra-low latency",
@@ -36,7 +36,7 @@ const PartnersSection = () => {
             <span className="text-foreground">PARTNERS</span>
           </h2>
           <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-semibold">
-            PawX is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and Pyth, demonstrating real-world traction
+            PawX is already trusted by more than 10+ Web3 projects, including UXLINK, TrueNorth, and Padtai, demonstrating real-world traction
           </p>
         </div>
 

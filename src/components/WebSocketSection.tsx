@@ -6,7 +6,7 @@ const wsEventTypes = [
   { event: "tweet_retweet", color: "bg-blue-500", label: "Retweet" },
   { event: "user_follow", color: "bg-purple-500", label: "Follow" },
   { event: "user_unfollow", color: "bg-orange-500", label: "Unfollow" },
-  { event: "tweet_like", color: "bg-pink-500", label: "Like" },
+  { event: "user_profile_change", color: "bg-pink-500", label: "Profile change" },
   { event: "tweet_reply", color: "bg-yellow-500", label: "Reply" },
 ];
 
@@ -39,7 +39,7 @@ const WebSocketSection = () => {
                 <div>
                   <h3 className="text-lg font-bold text-foreground mb-3">Real-Time Event Streaming</h3>
                   <p className="text-sm text-muted-foreground font-medium leading-relaxed">
-                    A lightweight WebSocket service that pushes live events for a target Twitter account: who they follow/unfollow, new tweets, retweets, likes, replies, and other interactions. Use it to power live dashboards, notifications, or automation that reacts instantly to an account's activity.
+                    A lightweight WebSocket service that pushes live events for a target Twitter account: who they follow/unfollow, new tweets, retweets, profile changes, replies, and other interactions. Use it to power live dashboards, notifications, or automation that reacts instantly to an account's activity.
                   </p>
                 </div>
               </div>
@@ -75,7 +75,7 @@ const WebSocketSection = () => {
               </h3>
               <ul className="space-y-3">
                 {[
-                  "Low-latency streaming (~500ms)",
+                  "Low-latency streaming (~300ms)",
                   "Real-time event notifications",
                   "Multiple account monitoring",
                   "Automatic reconnection",
@@ -106,7 +106,7 @@ const WebSocketSection = () => {
                   <span className="text-primary">new</span>
                   <span className="text-foreground"> WebSocket(</span>
                   <br />
-                  <span className="text-green-600">  'wss://foxhole.bot/ws'</span>
+                  <span className="text-green-600">  'wss://pawx.ai/ws'</span>
                   <br />
                   <span className="text-foreground">);</span>
                   <br />
